@@ -1,7 +1,7 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
-import Link from "next/link";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react"
+import Link from "next/link"
 
 const perks = [
   {
@@ -22,7 +22,7 @@ const perks = [
     description:
       "We've pledged 1% of sales to the preservation and restoration of the natural environment.",
   },
-];
+]
 
 export default function Home() {
   return (
@@ -73,5 +73,5 @@ export default function Home() {
         </MaxWidthWrapper>
       </section>
     </>
-  );
+  )
 }
