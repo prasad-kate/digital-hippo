@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+    "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -29,6 +30,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/express": "^4.17.21",
     "@types/node": "^20",
     "@types/react": "^18",
