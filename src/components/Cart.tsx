@@ -14,6 +14,7 @@ import { formatPrice } from "@/lib/utils"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import Image from "next/image"
+import React from "react"
 
 function Cart() {
   const itemCount = 0

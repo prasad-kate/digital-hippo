@@ -4,6 +4,7 @@ import { PRODUCT_CATEGORIES } from "@/config"
 import { useEffect, useRef, useState } from "react"
 import NavItem from "./NavItem"
 import { useOnClickOutside } from "@/hooks/useOnClickOutside"
+import React from "react"
 
 function NavItems() {
   const [activeIndex, setActiveIndex] = useState<null | number>(null)

@@ -4,6 +4,7 @@ import { Icons } from "./Icons"
 import NavItems from "./NavItems"
 import { buttonVariants } from "./ui/button"
 import Cart from "./Cart"
+import React from "react"
 
 const Navbar = () => {
   const user = null
