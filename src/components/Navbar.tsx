@@ -5,9 +5,13 @@ import NavItems from "./NavItems"
 import { buttonVariants } from "./ui/button"
 import Cart from "./Cart"
 import React from "react"
+import { getServerSideUser } from "@/lib/payload-utils"
+import { cookies } from "next/headers"
+import UserAccountNav from "./UserAccountNav"
 
-const Navbar = () => {
-  const user = null
+const Navbar = async () => {
+  const nextCookies = cookies()
+  const { user } = await getServerSideUser(nextCookies)
 
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0 h-16">
@@ -44,7 +48,9 @@ const Navbar = () => {
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   )}
 
-                  {user ? null : (
+                  {user ? (
+                    <UserAccountNav user={user} />
+                  ) : (
                     <Link
                       href="/sign-up"
                       className={buttonVariants({
